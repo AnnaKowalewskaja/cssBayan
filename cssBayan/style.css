@@ -1,0 +1,45 @@
+
+:root{
+--main-animation:all 0.3s ease-in;
+--max-width:1222px;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a,li,button {
+    text-decoration: none;
+    transition: var(--main-animation);
+}
+
+a,
+li,
+button:hover {
+    cursor: pointer;
+    transition: var(--main-animation);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.container {
+    max-width: var(--max-width);
+
+    width: 84%;
+    margin: 0 auto;
+}
+
+.text_h1{
+    
+}
