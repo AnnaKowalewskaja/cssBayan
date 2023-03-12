@@ -55,6 +55,7 @@ ul {
     transition: 0.5s;
 }
 
+
 .bayan-input:checked+.bayan-label+.bayan__show {
     height: auto;
     padding: 1rem 0;
