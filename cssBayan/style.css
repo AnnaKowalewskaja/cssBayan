@@ -1,7 +1,6 @@
-
-:root{
---main-animation:all 0.3s ease-in;
---max-width:1222px;
+:root {
+    --main-animation: all 0.3s ease-in;
+    --max-width: 1222px;
 }
 
 * {
@@ -16,14 +15,18 @@ html {
     box-sizing: border-box;
 }
 
-a,li,button {
+a,
+li,
+button {
     text-decoration: none;
     transition: var(--main-animation);
 }
 
 a,
 li,
-button:hover {
+button,
+.bayan__container,
+.bayan-label:hover {
     cursor: pointer;
     transition: var(--main-animation);
 }
@@ -40,6 +43,25 @@ ul {
     margin: 0 auto;
 }
 
-.text_h1{
-    
+.bayan-input {
+    display: none;
+}
+
+.bayan__show {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.bayan-input:checked+.bayan-label+.bayan__show {
+    height: auto;
+    padding: 1rem 0;
+}
+
+.bayan__container:hover {
+    color: blue;
+}
+
+.bayan__img{
+    max-width: 15rem;
 }
